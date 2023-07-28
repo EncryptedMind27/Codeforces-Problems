@@ -1,0 +1,27 @@
+    #include <string>
+    #include <iostream>
+
+    using namespace std;
+
+    int main(){
+        int n;
+        cin >> n;
+        string list[n];
+        for(int x=0;x<n;x++)
+            cin >> list[x];
+
+        for(int x=0;x<n;x++)
+        {
+            string word=list[x];
+            if(word.length()<=10){
+                cout << word;
+            }
+            else {
+                cout << word[0];
+                cout << word.length()-2;
+                cout << word[word.length()-1];
+            }
+            cout << endl;
+        }
+        return 0;
+    }
